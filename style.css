@@ -1,0 +1,373 @@
+html { 
+    font-family: "Roboto"; 
+    
+}
+
+.spacer {
+    margin: 4rem 0;
+}
+
+.pag { 
+width: 100%;
+}
+
+.page-container { 
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header" 
+    "softbol softbol softbol"
+    "juego juego juego";
+    
+}
+
+/* HEADER */
+header { 
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.isologo {
+    display: flex;
+    align-items: center;   
+}
+
+header p { 
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-decoration: solid 2px;
+   align-items: flex-end;
+}
+
+header h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:  4rem;
+    color: rgb(246, 174, 39);
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+/*NAV*/
+
+.nav-ball {
+    transition-duration: 1.6s;
+}
+
+.nav-ball:hover {
+    color: greenyellow;
+    transform: rotate(360deg); 
+
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: .3rem;
+    margin-right: 2rem;
+}
+
+nav ul li a:hover { 
+    background-color: orange;
+    color: white;
+    border-radius: 3px;
+}
+
+
+/* Que es el softbol */
+
+.que-es-el-softbol-container spacer{
+    grid-area: softbol;
+    
+}
+
+.que-es-el-softbol-container h1 {
+    text-align: center;
+    font-size: 2rem
+}
+
+.que-es-el-softbol {
+    text-align: justify;
+    columns: 3;
+    gap: 2rem;
+    column-rule: solid rgb(238, 148, 45) 1.5px;
+}
+
+.que-es-el-softbol p:first-letter {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    float: left;
+    line-height: 2.8rem;
+    background-color:rgba(225, 151, 22, 0.87);
+    margin-right: 0.2;
+    padding: 3;
+}
+
+.que-es-el-softbol  figcaption { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+  }
+
+  .que-es-el-softbol img {
+      border: solid 5px gray;
+      width: 350px;
+    
+      
+  }
+
+
+
+
+/*como se juega*/
+
+.como-se-juega-container spacer {
+    grid-area: juego;
+ }
+
+.como-se-juega-container h2 {
+    text-align: center;
+    font-size: 2rem;
+ }
+
+.como-se-juega-video {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0.5;
+border-color: black;
+border: 5rem;
+width: 100%; 
+height: auto;
+
+}
+
+.como-se-juega { 
+    text-align: justify;
+    columns: 3;
+    gap: 2rem;
+    column-rule: solid rgb(238, 148, 45) 1.5px;
+}
+
+.como-se-juega p:first-letter {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    float: left;
+    line-height: 2.8rem;
+    background-color: rgba(225, 151, 22, 0.87);
+    margin-right: 0.2;
+    padding: 3;
+}
+
+
+/* "campo-de-juego-container"*/
+
+.campo-de-juego-container { 
+    grid-area: campo;
+
+}
+
+
+.campo-de-juego-container h2{ 
+    text-align: center;
+    font-size: 2rem;
+}
+
+.campo-de-juego-container p{ 
+    text-align: justify;
+    background-color: rgba(225, 151, 22, 0.87);
+    color: white;
+    border: 1px solid rgb(251, 212, 120);
+    border-radius: 5px;
+    
+}
+.campo-de-juego-container img { 
+   justify-items: center;
+   width: 100%;
+}
+
+
+/*Posiciones de juego tabla*/
+
+
+.posiciones-juego-container h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.posiciones-juego-tabla dt {
+    text-align: start;
+    font-size: 1.3rem;
+    text-decoration: solid;
+    color: orange;
+
+}
+
+.tabla-de-posiciones  {
+    text-align: start;
+    font-size: 1rem;
+    text-decoration: solid;
+    background-color: rgb(244, 242, 238);
+    border: solid 2px gray;
+}
+
+.tabla-de-posiciones caption{
+    color: rgb(154, 150, 150);
+    text-decoration: solid;
+    font-size: 1.4rem;
+} 
+
+.tabla-de-posiciones th{
+    text-align: center;
+    color:white;
+    background-color:  rgba(225, 151, 22, 0.87);
+
+}
+
+.tabla-de-posiciones td{
+    text-align: center;
+    color: rgb(181, 84, 14);
+    background-color: rgb(242, 206, 113);
+}
+
+
+/* grid imagenes */
+
+.grid-container-img {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(225, 151, 22, 0.87);
+    border: 2px solid; 
+    border-color: gray;
+    
+ }
+
+ .campo-img {
+    transition: transform 250ms ease-in-out;
+    margin: 5px;
+ }
+
+ .campo-img:hover {
+    transform: scale(1.10);
+ }
+
+/*materiales grid*/
+
+.materiales-grid-container { 
+    background-color: rgba(225, 151, 22, 0.87);
+    border: 2px solid gray;
+    
+}
+
+.materiales-grid-container h2 {
+    color: aliceblue;
+    text-decoration: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.materiales-grid { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    background-color:rgb(181, 84, 14);
+    border: solid 1px;
+    border-radius: 2%;
+    text-align: center;
+    color: aliceblue;
+    transition: transform 250ms ease-in-out;
+}
+
+.materiales-grid:hover {
+    transform: scale(1.4);
+}
+
+
+/*Pie de pagina*/
+
+.pie-de-pag h1 {
+    text-align: center;
+    
+}
+
+.pie-de-pag img{
+    margin-left: 25%;
+    margin-left: 25%;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:768px) and (min-width:577px) {
+  html {margin: 0.2rem;}
+.que-es-el-softbol img {width: 185px;
+margin-left: -1.5rem;}
+
+.que-es-el-softbol  figcaption { 
+       text-align: center;
+  }
+
+.como-se-juega-video {
+    border: 0rem;
+    width: 11rem; 
+    height: auto;
+}
+.pie-de-pag img{
+    margin-left: 10%;
+    margin-left: 10%;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   }
+
+}
+
+
+@media screen and (max-width:576px)
+{  html {margin: 0.05rem;}
+.que-es-el-softbol img {width: 125px;
+margin-left: -2rem;}
+
+.que-es-el-softbol  figcaption { 
+       text-align: center;
+  }
+
+.como-se-juega-video {
+    border: 0rem;
+    width: 15px; 
+    height: auto;
+    margin-left: 1rem;
+}
+.pie-de-pag img{
+    margin-left: 3%;
+    margin-left: 3%;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   }
+
+}
